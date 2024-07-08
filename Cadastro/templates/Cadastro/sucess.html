@@ -1,15 +1,23 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/sucess.css' %}">
     <title>Document</title>
 </head>
 <body>
     <div>
-        <p>Inscrição feita com sucesso</p>
-        <p>Você receberá um email com as informações que foram preenchidas</p>
-        <a href="{% url 'index' %}">Voltar a página inicial</a>
-    </div>
+        <div class="center-message">
+            <h1>Cadastro Realizado com Sucesso!</h1>
+            <p>Em breve você receberá um email.</p>
+            <a href="{% url 'index' %}">Voltar a página inicial</a>
+        </div>
 </body>
 </html>

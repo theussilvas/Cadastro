@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.center-message {
+    background-color: #e0f7fa;
+    border: 1px solid #00acc1;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.center-message h1 {
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.center-message p {
+    color: #004d40;
+    margin: 0;
+}
+
+.center-message a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+}
