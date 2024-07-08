@@ -1,0 +1,54 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/inscricao.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <form id="contact" class="form-container" method="post">
+            {% csrf_token %}
+
+            <h3>Cadastro</h3>
+            <h4>Contact us today, and get reply with in 24 hours!</h4>
+            <fieldset>
+                <label for="{{ form.nome.id_for_label }}">Nome</label>
+                {{ form.nome }}
+            </fieldset>
+            <fieldset>
+                <label for="{{ form.email.id_for_label }}">Email</label>
+                {{ form.email }}
+            </fieldset>
+                <fieldset>
+                    <label for="{{ form.telefone.id_for_label }}">Telefone</label>
+                    {{ form.telefone }}
+                </fieldset>
+                <fieldset>
+                    <label for="{{ form.cargo.id_for_label }}">Cargo</label>
+                    {{ form.cargo }}
+                </fieldset>
+                <fieldset class="select">
+                    <label for="{{ form.escolaridade.id_for_label }}">Escolaridade</label>
+                    {{ form.escolaridade }}
+                </fieldset>
+                <fieldset>
+                    <label for="{{ form.observacoes.id_for_label }}">Observacoes</label>
+                    {{ form.observacoes }}
+                </fieldset>
+            
+            <button type="submit"  class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    
+</body>
+</html>

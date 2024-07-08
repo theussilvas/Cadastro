@@ -1,0 +1,26 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Há Vagas</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Bem vindo ao Há Vagas</h1>
+        <a href="{% url 'cadastro' %}">Cadastrar Curriculo</a>
+    </div>
+
+
+
+    
+
+</body>
+</html>
